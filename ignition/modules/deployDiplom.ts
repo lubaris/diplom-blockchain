@@ -11,7 +11,7 @@ const SwapModule = buildModule("SwapModule", (m) => {
   const router = m.contract("SwapRouter", []);
   const token1 = m.contract("ERC20EXte", [1, "KrendelCoin", "KRENDEL"]);
   const token2 = m.contract("ERC20EXte", [2, "GerdaCoin", "GERDA"], {id: "ERC20EXte#token1"});
-
+  //0x7001dB053c658dd491897810F0C137c1fF56A19F
   //0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c
   //0x55d398326f99059ff775485246999027b3197955
   m.call(router, "addModuleSwap", [UniswapV2SwapModule1, "pancake"]);
